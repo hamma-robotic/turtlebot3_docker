@@ -15,6 +15,10 @@ docker build -t turtlebot3_humble_full .
 xhost +local:docker
 #Run the container
 docker run -it --rm \
+  -e TURTLEBOT3_MODEL=burger \
+#-e TURTLEBOT3_MODEL=waffle \
+#-e TURTLEBOT3_MODEL=waffle_pi \
+
   --env DISPLAY=$DISPLAY \
   --env QT_X11_NO_MITSHM=1 \
   --env LIBGL_ALWAYS_SOFTWARE=1 \

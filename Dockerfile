@@ -37,7 +37,7 @@ RUN . /opt/ros/humble/setup.sh && \
 # Environment setup
 RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc
 RUN echo "source /root/tb3_ws/install/setup.bash" >> /root/.bashrc
-RUN echo "export TURTLEBOT3_MODEL=burger" >> /root/.bashrc
+#RUN echo "export TURTLEBOT3_MODEL=burger" >> /root/.bashrc
 
 # GUI display
 ENV DISPLAY=:0

@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+frames_*.gv
+frames_*.pdf

@@ -26,6 +26,8 @@ docker run -it --rm \
   turtlebot3_humble_full
 #Launch Gazebo
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+#Launch RVIZ2
+ros2 launch turtlebot3_bringup rviz2.launch.py
 #Teleoperate the robot
 ros2 run turtlebot3_teleop teleop_keyboard
 #Notes

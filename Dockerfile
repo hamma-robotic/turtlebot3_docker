@@ -44,4 +44,9 @@ ENV DISPLAY=:0
 ENV QT_X11_NO_MITSHM=1
 VOLUME ["/tmp/.X11-unix:/tmp/.X11-unix:rw"]
 
-CMD ["/bin/bash"]
+# Copy entrypoint
+COPY docker/entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["bash"]
